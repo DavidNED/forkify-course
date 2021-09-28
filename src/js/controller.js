@@ -21,8 +21,6 @@ const controlSearchResults = async function () {
   }
 };
 
-console.log('Hey');
-
 const controlMainRecipe = async function (id) {
   try {
     RecipeView.renderSpinner();
@@ -32,6 +30,11 @@ const controlMainRecipe = async function (id) {
     RecipeView.renderError(err.message);
   }
 };
+
+const newFeature = function () {
+  console.log('New feature');
+};
+newFeature();
 
 const controlPagination = function (goto) {
   ResultsView.render(Model.getSearchResultsPage(goto));
