@@ -31,11 +31,6 @@ const controlMainRecipe = async function (id) {
   }
 };
 
-const newFeature = function () {
-  console.log('New feature');
-};
-newFeature();
-
 const controlPagination = function (goto) {
   ResultsView.render(Model.getSearchResultsPage(goto));
   PaginationView.render(Model.state);
